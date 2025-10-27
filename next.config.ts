@@ -1,8 +1,11 @@
-import type { NextConfig } from "next";
+/**
+ * @format
+ * @type {import('next').NextConfig}
+ */
 
-const nextConfig: NextConfig = {
-  /* config options here */
-  reactCompiler: true,
+const nextConfig = {
+	turbopack: {}, // enable Turbopack cleanly
+	reactStrictMode: true,
 };
 
 export default nextConfig;
